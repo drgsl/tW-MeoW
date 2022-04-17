@@ -1,0 +1,374 @@
+@import "nav.css";
+
+body::-webkit-scrollbar {
+    width: 10px;              
+}
+body::-webkit-scrollbar-track {
+    background: #A52A2A;       
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f1ece2;   
+    border-radius: 30px;       
+    border: 3px solid #6D6875;  
+}
+body, p, h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  font-family: 'Nunito',sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.full-page
+{
+    height: 130vh;
+	width: 100%;
+	background: linear-gradient(-45deg, #677423, #5a3e29, #bbc191, #8a5d3d);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	position: absolute;
+  	font-family: 'Nunito',sans-serif;
+  
+}
+
+.form-box
+{
+	font-family: 'Nunito',sans-serif;
+    width:40em;
+	height:38em;;
+	position:relative;
+    top: 5em;
+	margin:2% auto;
+	background:rgba(218, 247, 166,0.3);
+	padding:0.05em;
+    overflow: hidden;
+	border-radius: 13px;
+}
+.button-box
+{
+	width: 10.5em;
+	margin:1.2em auto;
+	margin-bottom: 0em;
+	position:relative;
+	border-radius: 1.875em;
+	background: rgba(218, 247, 166, 0.164);
+}
+.toggle-btn
+{
+	padding:0.6em 1.313em;
+	cursor:pointer;
+	background: transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:-1em;
+	position: absolute;
+	width: 5.25em;
+	height: 100%;
+	background: #EFD3D7;
+	border-radius: 6.25em;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 10.75em;
+	position:absolute;
+	width:15.625em;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 7.5em;
+	position:absolute;
+	width:15.625em;
+	transition:.5s;
+}
+.input-field
+{
+	width: 200%;
+	padding:1.25em 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+	background: transparent;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(218, 247, 166);
+	font-family: 'Nunito',sans-serif;
+	font-weight: bold;
+  }
+.submit-btn
+{
+    width: 70%;
+	padding: 0.938em 3.25em;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #EFD3D7;
+	border: 0;
+	outline: none;
+	border-radius: 1.875em;
+}
+.check-box
+{
+	margin: 1.875em 0.938em 2.75em 0;
+}
+.remember {
+	font-size: 12px;
+	width: 10em;
+	color: rgb(87, 87, 87);
+}
+span
+{
+	color:#DAF7A6;
+	font-size:1.25em;
+	bottom:4.25em;
+	position:absolute;
+    width: 18.75em;
+}
+#login
+{
+	left:6.25em;
+}
+#login input
+{
+	color:white;
+	font-size: 1.125em;
+}
+#register
+{
+	margin-top: -4em;
+	left:31.25em;
+}
+form#register {
+    left: 43.75em;
+}
+#register input
+{
+	color:white;
+	font-size: 1.125em;
+}
+
+
+/* MOBILE MENU BIG */
+@media screen and (min-width:480px) and (max-width: 700px) {  
+	#register
+	{
+		margin-top: -2.75em;
+		left:31.25em;
+	}
+	
+
+.form-box
+{
+    width:70%;
+	height:25.75em;;
+	background:rgba(0,0,0,0.3);
+	padding:0em;
+    overflow: hidden;
+}
+
+.input-group-login
+{
+	top: 7.75em;
+	position:absolute;
+	width:16.625em;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 8em;
+	position:absolute;
+	width:15.625em;
+	transition:.5s;
+}
+.input-field
+{
+	width: 90%;
+	padding:0.1em 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+    width: 60%;
+	padding: 0.938em 3.25em;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #DAF7A6;
+	border: 0;
+	outline: none;
+	border-radius: 1.875em;
+}
+span
+{
+	color:#777;
+	font-size:1.25em;
+	bottom:4.25em;
+	position:absolute;
+    width: 18.75em;
+}
+ 
+    
+}
+/* END MOBILE MENU BIG*/
+
+
+/* MOBILE MENU */
+@media screen and (max-width: 480px) {
+        
+
+.form-box
+{
+    width:70%;
+	height:24.75em;;
+	position:relative;
+    top: 6em;
+	margin:2% auto;
+	background:rgba(218, 247, 166 );
+	padding:0.5em;
+    overflow: hidden;
+}
+
+    
+.button-box
+{
+	width: 16em;
+	font-size: 10px;
+	margin:1.2em auto;
+	position:relative;
+	border-radius: 13px;
+}
+.toggle-btn
+{
+	padding:0.6em 1.313em;
+	cursor:pointer;
+	background:transparent;
+	border: none;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:-1em;
+	position: absolute;
+	width: 9em;
+	height: 100%;
+	background: #DAF7A6;
+	border-radius: 6.25em;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 7.75em;
+    left: 2.25em;
+    margin: 2px 0;
+	position:absolute;
+	width:15em;
+	font-size: 12px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 10em;
+    left: 15em;
+	font-size: 12px;
+    margin: 2px 0;
+	position:absolute;
+	width:15em;
+	transition:.5s;
+}
+.input-field
+{
+	width: 90%;
+	padding:0 0;
+	margin:2px 0;
+    left: inherit;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+    width: 50%;
+	padding: 0.438em 1.25em;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #EFD3D7;
+	border: 0;
+	outline: none;
+	border-radius: 1.875em;
+}
+.check-box
+{
+	margin: 1.875em 0.238em 2.75em 0;
+}
+.remember {
+	font-size: 8px;
+}
+span
+{
+	color:#DAF7A6;
+	font-size:1em;
+	bottom:4.65em;
+	position:absolute;
+    width: 12.75em;
+}
+ #login
+{
+	left:2.25em;
+}
+#login input
+{
+	color:white;
+	font-size: 1.125em;
+}
+form#login {
+    left: 3.75em;
+}
+#register
+{
+	left:27.25em;
+}
+form#register {
+    left: 28.25em;
+}
+#register input
+{
+	color:white;
+	font-size: 1.125em;
+}
+    
+}
