@@ -83,7 +83,7 @@ body{
 	position: absolute;
 	width: 5.25em;
 	height: 100%;
-	background: #EFD3D7;
+	background: #f1ece2;
 	border-radius: 6.25em;
 	transition: .5s;
 }
@@ -125,7 +125,7 @@ body{
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: #EFD3D7;
+	background: #f1ece2;
 	border: 0;
 	outline: none;
 	border-radius: 1.875em;

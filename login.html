@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MeoW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-page">
+        <div id="nav-background">
+            <div id="nav-container">
+                <header id="nav-header">
+                    <h1><a class="nav-logo-function" href="index.html#home" id="nav-logo">
+                MeoW
+            </a></h1>
+                    <img src="https://i.imgur.com/xcFvxAK.png" class="hamburger-img" id="nav-menu-button">
+                </header>
+                <nav>
+                    <ul id="navv" class="nav-ul hide-ul">
+                        <li><a class="nav-link" href="index.html#about">About Us</a></li>
+                        <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li><a class="nav-link" href="search.html">Animals</a></li>
+                        <li><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script src="scripts/nav.js"></script>
+        <div id='login-form' class='login-page'>
+
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' class='toggle-btn'>Log In</button>
+                    <button type='button' class='toggle-btn'>Register</button>
+                </div>
+
+                <form id='login' class='input-group-login'>
+                    <input type='text' id="emaillogin" class='input-field' placeholder='Email' required>
+                    <input type='password' id="passwordlogin" class='input-field' placeholder='Enter Password' required>
+                    <div class="remember-check">
+                        <input type='checkbox' class='check-box'> <b class="remember"> Remember Password </b>
+                    </div>
+
+                    <button type='button' class='submit-btn'>Log in</button>
+                </form>
+
+                <form id='register' class='input-group-register'>
+                    <input id="firstName" type='text' class='input-field' placeholder='First Name' required>
+                    <input id="lastName" type='text' class='input-field' placeholder='Last Name ' required>
+                    <input id="email" type='email' class='input-field' placeholder='Email' required>
+                    <input id="password" type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'> <b class="remember"> I agree to the <a href="doc.html">terms and
+              conditions</a> </b>
+                    <button type='button' class='submit-btn'>Register</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>
