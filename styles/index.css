@@ -249,9 +249,9 @@ input[type=submit]:hover {
 .footer-reference{
   text-emphasis-color: white;
   text-align: center;
-  background: #02121E;
+  background: #5a3e29;
   border-radius: 3px;
-  border-color: #02121E;
+  border-color: #5a3e29;
   color: white;
 }
 
@@ -282,9 +282,9 @@ input[type=submit]:hover {
   .footer-reference{
     text-emphasis-color: white;
     text-align: center;
-    background: #02121E;
+    background: #5a3e29;
     border-radius: 3px;
-    border-color: #02121E;
+    border-color: #5a3e29;
     color: white;
     font-size: 10px;
   }
