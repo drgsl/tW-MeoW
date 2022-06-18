@@ -1,0 +1,564 @@
+@import "nav.css";
+
+body::-webkit-scrollbar {
+    width: 10px;               
+}
+body::-webkit-scrollbar-track {
+    background: #A52A2A;        
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f1ece2;    
+    border-radius: 30px;       
+    border: 3px solid #6D6875;  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.full-page
+{
+    height: 140vh;
+	width: 100%;
+	background: linear-gradient(-45deg, #677423, #5a3e29, #bbc191, #8a5d3d);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	position: absolute;
+  	font-family: 'Nunito',sans-serif;  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(87, 87, 87);
+	font-family: 'Nunito',sans-serif;
+	font-weight: bold;
+}
+
+
+
+
+
+body, p, h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  font-family: 'Nunito',sans-serif;
+}
+
+
+
+#myaccount-form
+{
+    display: none;
+}
+.form-box
+{
+	font-family: 'Nunito',sans-serif;
+    width:42em;
+	height:45em;;
+	position:relative;
+    top: 5em;
+	margin:2% auto;
+	background:rgba(218, 247, 166,0.3);
+	padding:0.05em;
+    overflow: hidden;
+	border-radius: 13px;
+}
+h2 {
+    margin:auto 5.8em;
+    display: block;
+    font-size: 1em;
+    padding: 0.5em 3em;
+    width: 5em;
+    font-weight: bold;
+    font-family: 'Nunito',sans-serif;
+    color: aliceblue;    
+}
+.button-box
+{
+	font-family: 'Nunito',sans-serif;
+	width: 16em;
+	margin:1.2em auto;
+	position:relative;
+}
+.toggle-btn
+{
+	padding:1em 1.6em;
+	cursor:pointer;
+	background:transparent;
+    font-size: 0.7em;
+	border:0;
+	outline: none;
+	position: relative;
+}
+.toggle-btn1
+{
+	padding:1em 0em;
+    margin:0em 1.859em;
+    left:1em;
+	cursor:pointer;
+	background:transparent;
+    font-size: 0.7em;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	position: absolute;
+	width: 7em;
+	height: 100%;
+	background: #f1ece2;
+	border-radius: 6.25em;
+	transition: .5s;
+}
+.input-group-account
+{
+	top: 6.75em;
+	position:absolute;
+	width:12.625em;
+	transition:.5s;
+}
+.input-group-passwd
+{
+    top: 7.5em;;
+	position:absolute;
+	width:10.625em;
+	transition:.5s;
+}
+.input-field
+{
+	width: 20em;
+	padding:1em 1em;   
+	margin:5px 6em;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+    font-family: 'Nunito',sans-serif;
+	background: transparent;
+}
+.input-field-p
+{
+	width: 25em;
+	padding:1em 1em;
+	margin:1em 2em;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+    font-family: 'Nunito',sans-serif;
+	background: transparent;
+}
+.submit-btn
+{
+    width: 4em;
+	padding: 0.238em 0em;
+	cursor: pointer;
+    font-size: 1em;
+	display: block;
+	margin: 1.5em 17em;;
+	background: #f1ece2;
+	border: 0;
+	outline: none;
+	border-radius: 1.875em;
+	font-family: 'Nunito',sans-serif;
+}
+
+.submit-btn-p
+{
+    width: 4em;
+	padding: 0.238em 0em;
+	cursor: pointer;
+	display: block;
+    font-size: 1em;
+	margin: 2em 9em;;
+	background: #f1ece2;
+	border: 0;
+   
+	border-radius: 1.875em;
+}
+
+#account input
+{
+	color:white;
+	font-size: 1.125em;
+}
+
+form#passwd {
+    left: 49.75em;
+}
+#passwd input
+{
+	color:white;
+	font-size: 1.125em;
+}
+
+
+/* MOBILE MENU BIG */
+@media screen and (min-width:480px) and (max-width: 700px) {
+  
+    .myaccount {
+        flex-basis: auto;
+    padding: 2rem 4em;
+        font-size: 3em;
+        /*border-bottom: 1px solid #ffe4e4;*/
+    }
+   
+    
+.button-box
+{
+	width: 14em;
+	margin:0em auto;
+    top:3em;
+  
+	position:relative;
+
+}
+.toggle-btn
+{
+	padding:0em 1.7em;
+    margin: 0em -0.5em;
+	cursor:pointer;
+    width: 4em;
+    left:1em;
+	background:transparent;
+    text-align: center;
+    font-size: 1em;
+	border:0;
+	outline: none;
+	position: relative;
+}
+.toggle-btn1
+{
+	padding:0em 0em;
+    margin:0em 1.8em;
+    left: 5em;
+	cursor:pointer;
+    width: 3em;
+	background:transparent;
+    text-align: left;
+    font-size: 1em;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	
+	position: absolute;
+	width: 7em;
+    margin: 0 0.9em;
+	height: 100%;
+	background: #f1ece2;
+	border-radius: 2.25em;
+	transition: .5s;
+}
+    
+    
+#myaccount-form
+{
+    display: none;
+}
+.form-box
+{
+    width:30em;
+	height:40.75em;;
+	position:relative;
+    top: 7em;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:0.05em;
+    overflow: hidden;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    padding: 0.5em 0em;
+    width: 10em;
+    margin-block-start: 0.43em;
+    margin-block-end: 0.43em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Nunito',sans-serif;
+    color: aliceblue;
+    
+}
+.input-group-account
+{
+	top: 7.75em;
+	position:absolute;
+	width:25.625em;
+	transition:.5s;
+    left: 4.3em;
+    margin: 2px 0;
+	
+}
+.input-group-passwd
+{
+    top: 8.5em;;
+	position:absolute;
+	width:30.625em;
+	transition:.5s;
+    left:-1em;
+}
+
+    .input-field
+{
+	width: 18em;
+	padding:0 0;
+	margin:0 0em;
+    left: inherit;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+	background: transparent;
+}
+    .input-field-p
+{
+	width: 10em;
+	padding:0 0;
+	margin:1.4em 1em;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+    font-family: 'Nunito',sans-serif;
+	background: transparent;
+}
+
+.submit-btn
+{
+    width: 4em;
+	padding: 0.238em 0em;
+	cursor: pointer;
+	display: block;
+	margin: 2em 5em;
+	background: #DAF7A6;
+	border: 0;
+    font-size: 1.5em;
+   
+	outline: none;
+	border-radius: 1.875em;
+}
+    
+    .submit-btn-p
+{
+    width: 4em;
+    padding: 0.338em 0em;
+	cursor: pointer;
+	display: block;
+	margin: 2em 6em;
+	background: #DAF7A6;
+	border: 0;
+    font-size: 1.3em;
+	outline: none;
+	border-radius: 2.875em;
+}
+
+#account input
+{
+	color:white;
+	font-size: 20px;
+}
+
+#passwd input
+{
+	color:white;
+	font-size: 25px;
+}
+}
+/* END MOBILE MENU BIG*/
+
+
+/* MOBILE MENU */
+@media screen and (max-width: 480px) {
+
+    .myaccount {
+        flex-basis: auto;
+    padding: 1rem 1.5rem;
+        border-bottom: 1px solid #ffe4e4;
+    }
+  
+#myaccount-form
+{
+    display: none;
+}
+.form-box
+{
+    width:14.75em;
+	height:28.75em;;
+	position:relative;
+    top: 8em;
+	margin:2% auto;
+	background:rgba(218, 247, 166 );
+	padding:0.05em;
+    overflow: hidden;
+}
+
+    
+.button-box
+{
+	width: 10em;
+	margin:1.2em -0.7em;
+	position:relative;
+	
+	border-radius: 1.175em;
+}
+.toggle-btn
+{
+	padding: 0.9em;
+    left:3.5em;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+    width: 3em;
+    text-align: center;
+    font-size: 0.7em;
+
+	outline: none;
+	position: relative;
+}
+    .toggle-btn1
+{
+	padding:0.2em;
+    left:9.5em;
+	cursor:pointer;
+	background:transparent;
+    text-align: center;
+    font-size: 0.7em;
+    width: 3em;
+	border:0;
+	outline: none;
+
+	position: relative;
+}
+ 
+#btn
+{
+	top: 0;
+	margin: 0em 2em;
+	position: absolute;
+	width: 5em;
+	height: 100%;
+	background: #DAF7A6;
+	border-radius: 6.25em;
+	transition: .5s;
+}
+.input-group-account
+{
+	top: 4.75em;
+    left: 1em;
+	width:5.5em;
+	transition:.5s;
+}
+.input-group-passwd
+{
+    top: 4.5em;;
+    left: 10em;
+	position:absolute;
+	width:7.5em;
+	transition:.5s;
+}
+.input-field
+{
+	width: 8em;
+	padding:0em 0.7em;
+	margin:0.4em 0em;
+    color: aliceblue;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #999;
+	outline:none;
+	background: transparent;
+}
+    h2 {
+
+    padding: 0em 2.5em;
+    font-size: 1em;
+    width: 10em;
+    margin-block-start: 0.33em;
+    margin-block-end: 0.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Nunito',sans-serif;
+    color: aliceblue;
+    
+}
+     .input-field-p
+{
+	width: 8em;
+	padding:0em 0;
+    color: aliceblue;
+	margin:2em -1em;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid #D9DCED;
+	outline:none;
+    font-family: 'Nunito',sans-serif;
+	background: transparent;
+}
+.submit-btn
+{
+    width: 6em;
+	padding: 0.438em 1.25em;
+	cursor: pointer;
+	display: block;
+	margin: 2em 1em;
+	background: #EFD3D7;
+	border: 0;
+   
+	outline: none;
+	border-radius: 1.875em;
+}
+       
+    .submit-btn-p
+{
+    width: 6em;
+	padding: 0.438em 1.25em;
+	cursor: pointer;
+	display: block;
+	margin: 0.5em 1em;
+	background: #EFD3D7;
+	border: 0;
+    
+	outline: none;
+	border-radius: 1.875em;
+}
+
+#account input
+{
+	color:white;
+    left:30em;
+	font-size: 1.125em;
+}
+
+#passwd input
+{
+	color:aliceblue;
+     left: 28.25em;
+	font-size: 1.2em;
+}
+    
+}

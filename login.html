@@ -31,14 +31,14 @@
                 </nav>
             </div>
         </div>
-        <script src="scripts/nav.js"></script>
+        
         <div id='login-form' class='login-page'>
 
             <div class="form-box">
                 <div class='button-box'>
                     <div id='btn'></div>
-                    <button type='button' class='toggle-btn'>Log In</button>
-                    <button type='button' class='toggle-btn'>Register</button>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
                 </div>
 
                 <form id='login' class='input-group-login'>
@@ -66,6 +66,24 @@
         </div>
     </div>
    
+    <script>
+        var a = document.getElementById('login-form').style.display = 'block';
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+    
+        function register() {
+            x.style.left = '-47em';
+            y.style.left = '4.25em';
+            z.style.left = '5.2em';
+        }
+    
+        function login() {
+            x.style.left = '4.25em';
+            y.style.left = '43.75em';
+            z.style.left = '0em';
+        }    
+    </script>
 
 </body>
 
