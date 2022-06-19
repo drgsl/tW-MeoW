@@ -294,7 +294,7 @@ input[type=submit]:hover {
     border-radius: 7px;
 }
 .about-area{ 
-  background: linear-gradient(-45deg, #f7eae7, #d37297, #7ebfd6, #98ccc0);
+  background: linear-gradient(-45deg, #5a3e29, #bbc191, #8a5d3d, #677423);
 	background-size: 500% 500%;
 	animation: gradient 10s ease infinite;
 }

@@ -67,7 +67,7 @@
 	-webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
-	color: #bbc191;
+	color: #02121E;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 1.2rem;
@@ -90,7 +90,7 @@
 	  padding: 60px;
   }
   .nav-link {
-	background-color: #bbc191;
+	background-color: #cacfa5a1;
   }
   .nav-link:hover {
 	background-color: #bbc191;
