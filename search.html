@@ -10,7 +10,7 @@
     <link href="styles/search.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="populateData()">
     <div class="div-body">
         <div id="nav-background">
             <div id="nav-container">
@@ -100,15 +100,17 @@
                     <input type="text" id="searchbar" class="search-input" placeholder="search by name">
                     <button class="search-button" type="button" value="Search">All animals</button>
                 </div>
-                <div class="animal-section">
-                    <div class="row" id="animalSection">
+                <div class="product-section">
 
-
-                       
+                    <div class="row" id="productSection">
+                        <script src="scripts/search.js">
+                        </script>
+                    </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
+    </div>
     
         <footer class="footer-reference">
             <br>
@@ -117,5 +119,6 @@
             <p> <a href="doc.html"> Scholarly HTML Documentation </a></p>
         </footer>
         <script src="scripts/nav.js"></script>
+
 </body>
 </html>
