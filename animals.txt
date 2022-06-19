@@ -1,0 +1,1 @@
+{"success":true,"animals":[{"name":"Acvila Codalb", "path":"https://i.imgur.com/BLlyQDP.jpg","tags":["Asia","Europa","Forest","Mountain","Birds","Extinction"]}]}
