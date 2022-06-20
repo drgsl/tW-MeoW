@@ -93,12 +93,13 @@
                         <label for="con4"> vulnerable</label><br>
                         <br>
                     </form>
+                    <button onclick="filterByAnything()" class="button-filter" type="button" value="Filter"> Filter </button>
                 </div>
             </div>
             <div class="right">
                 <div class="search-section">
-                    <input type="text" id="searchbar" class="search-input" placeholder="search by name">
-                    <button class="search-button" type="button" value="Search">All animals</button>
+                    <input type="text" id="searchbar" onchange="filterByName()" class="search-input" placeholder="search by name">
+                    <button class="search-button" type="button" value="Search" onclick="populateData()">All animals</button>
                 </div>
                 <div class="product-section">
 

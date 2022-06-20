@@ -37,7 +37,7 @@ function on(el) {
   
   function allWordsInString(words, string) {
     for (let word of words) {
-      if (string.indexOf(word) == -1) {
+      if (string.indexOf(word.toLowerCase()) == -1) {
         return false;
       }
     }
@@ -95,13 +95,12 @@ function on(el) {
       let checkboxes = document.getElementsByClassName("checkboxfilter");
       checkboxes = Array.prototype.slice.call(checkboxes);
       let filterValues = checkboxes.filter((x) => x.checked).map((x) => x.value);
-  
+
       let products = [];
       for (let a of window.products) {
         let objectString = JSON.stringify(a).toLowerCase();
         if (
-          allWordsInString(filterValues, objectString) &&
-          ageFilter(a, window.sliderValue)
+          allWordsInString(filterValues, objectString)
         ) {
           products.push(a);
           console.log(a);
@@ -127,19 +126,32 @@ function on(el) {
   }
   
   async function populateData(callback=undefined) {
-    const response = (
-      await fetch("https://raw.githubusercontent.com/BobuDragos/tW-MeoW/main/animals.txt", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-    )
-      .json().then((data) => {
-        showProducts(data["products"]);
-        console.log("mata");
+    // const response = (
+    //   await fetch("https://raw.githubusercontent.com/BobuDragos/tW-MeoW/main/animals.txt", {
+    //     method: "GET",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //   })
+    // )
+
+    fetch('https://raw.githubusercontent.com/BobuDragos/tW-MeoW/main/animals')
+.then(response => response.json())
+.then(data => {
+  console.log(data) // Prints result from `response.json()` in getRequest
+  showProducts(data["animals"]);
         if (callback !== undefined) {
           callback();
         }
-      });
+})
+.catch(error => console.error(error))
+
+      // .json().then((data) => {
+      //   console.log(response);
+      //   showProducts(data["products"]);
+      //   console.log("mata");
+      //   if (callback !== undefined) {
+      //     callback();
+      //   }
+      // });
   }
