@@ -1,1 +1,20 @@
-{"success":true,"animals":[{"name":"Acvila Codalb", "path":"https://i.imgur.com/BLlyQDP.jpg","tags":["Asia","Europa","Forest","Mountain","Birds","Extinction"]}]}
+{"success":true,"animals":[{"name":"Acvila Codalb", "path":"https://i.imgur.com/BLlyQDP.jpg","tags":["Asia","Europe","Forest","Mountain","Birds","Extinction"]},
+{"name":"Agama cu barbă", "path":"https://i.imgur.com/EpSIHWy.jpg","tags":["Australia","Forest","Reptiles","Stable"]},
+{"name":"Alpaca", "path":"https://i.imgur.com/XWKA4rQ.jpg","tags":["America","Australia","Europe","Forest","Mountain","Mammals","Stable"]},
+{"name":"Anaconda verde", "path":"https://i.imgur.com/wcHeUJD.jpg","tags":["America","Forest","Reptiles","Stable"]},
+{"name":"Arici de mare", "path":"https://i.imgur.com/zAWT0Cg.jpg","tags":["Asia","America","Ocean","Invertebrates","Stable"]},
+{"name":"Broasca dungată galbenă", "path":"https://i.imgur.com/1Dihbu2.jpg","tags":["America","Forest","Amphibians","Stable"]},
+{"name":"Broasca fantoma otravitoare", "path":"https://i.imgur.com/Myp4002.jpg","tags":["America","Forest","Amphibians","Threatened"]},
+{"name":"Broasca țestoasă de apă", "path":"https://i.imgur.com/ow1htUU.jpg","tags":["Asia","Europe","Asia","Forest","Mountain","Reptiles","Stable"]},
+{"name":"Broasca țestoasă pocnitoare", "path":"https://i.imgur.com/oLpz5sc.jpg","tags":["America","Forest","Reptiles","Stable"]},
+{"name":"Câinele de preerie", "path":"https://i.imgur.com/4cCQrZS.jpg","tags":["America","Europe","Forest","Mammals","Threatened"]},
+{"name":"Călifari", "path":"https://i.imgur.com/usLpWdA.jpg","tags":["Australia","Europe","Ocean","Birds","Stable"]},
+{"name":"Calul", "path":"https://i.imgur.com/vjsBeGl.jpg","tags":["Asia","America","Europe","Savanna","Mountain","Mammals","Stable"]},
+{"name":"Cămila", "path":"https://i.imgur.com/8xanWkf.jpg","tags":["Asia","Africa","Desert","Mammals","Stable"]},
+{"name":"Căpriorul european", "path":"https://i.imgur.com/m3S8M0i.jpg","tags":["Europe","Forest","Mammals","Stable"]},
+{"name":"Cerbul lopătar", "path":"https://i.imgur.com/3OBLguY.jpg","tags":["America","Europe","Forest","Mammals","Stable"]},
+{"name":"Cercopitecul de savană", "path":"https://i.imgur.com/V0JhPCN.jpg","tags":["Africa","Forest","Mammals","Stable"]},
+{"name":"Coati", "path":"https://i.imgur.com/RKLyrb7.jpg","tags":["America","Desert","Forest","Mammals","Stable"]},
+{"name":"Corali", "path":"https://i.imgur.com/TGoFk1y.jpg","tags":["Asia","Africa","America","Australia","Europa","Ocean","Invertebrates","Threatened"]},
+{"name":"Crocodilul de Nil", "path":"https://i.imgur.com/Cte0U37.jpg","tags":["Africa","Forest","Reptiles","Stable"]}
+]}
