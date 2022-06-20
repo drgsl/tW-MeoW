@@ -19,9 +19,9 @@ function on(el) {
       taguletse += '<div class="tag">' + i + "</div>";
     }
     let s = `<div class="col">
-                              <div class="product-container">
+                              <div class="animal-container">
                                   <div class="wrap">
-                                      <img class="product-img" onclick="on(this)" src="${imagine}">
+                                      <img class="animal-img" onclick="on(this)" src="${imagine}">
                                       <div class="hide" id="overlay" onclick="off(this)">
                                           <h3> ${nume} </h3>
                                       </div>
@@ -112,7 +112,7 @@ function on(el) {
   
   function showProducts(products) {
     window.products = products;
-    document.getElementById("productSection").innerHTML = "";
+    document.getElementById("animalSection").innerHTML = "";
     for (let element of products) {
       var product = document.createElement("div");
       var tag = element["tags"] + ",";
@@ -121,7 +121,7 @@ function on(el) {
         element["path"],
         tag
       );
-      document.getElementById("productSection").appendChild(product);
+      document.getElementById("animalSection").appendChild(product);
     }
   }
   
