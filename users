@@ -1,0 +1,6 @@
+{"success":true,"users":[{"username":"Dua Lipa","email":"dua_lipa@gmail.com","password":"1234","isAdmin":"0","__v":0},
+{"username":"Cry","email":"crying@gmail.com","password":"1234","is_admin":"0","__v":0},
+{"username":"a a","email":"a@gmail.com","password":"a","is_admin":"1","__v":0},
+{"username":"b b","email":"b@gmail.com","password":"b","is_admin":"0","__v":0},
+{"username":"eu eu","email":"eu@eu.com","password":"eu","is_admin":"0","__v":0},
+{"username":"c c","email":"c@gmail.com","password":"c","is_admin":"0","__v":0}]}
