@@ -121,6 +121,9 @@ body {
     border-radius: 13px;
     padding: 3%;
     border-style: dotted;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .wrap {
@@ -129,10 +132,7 @@ body {
 
 .animal-img {
     max-height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 100%;  */
+    max-width: 100%;
     border-radius: 13px;
 }
 
@@ -161,11 +161,11 @@ body {
     cursor: pointer;
 }
 
-.product-img:hover {
+.animal-img:hover {
     filter: blur(1px);
 }
 
-.product-img:hover+.hide {
+.animal-img:hover+.hide {
     display: unset;
     z-index: 9;
     top: -5em;
@@ -222,6 +222,14 @@ body {
         padding-left: 20%;
         font-size: 13px;
     }
+    .tag {
+        background-color: #bbc191;
+        border-radius: 13px;
+        padding: 1%;
+        margin: 2%;
+        text-align: center;
+        font-size: 80%;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -241,6 +249,14 @@ body {
         border-color: #5a3e29;
         color: white;
         font-size: 15px;
+    }
+    .tag {
+        background-color: #bbc191;
+        border-radius: 13px;
+        padding: 1%;
+        margin: 2%;
+        text-align: center;
+        font-size: 70%;
     }
 }
 
@@ -349,5 +365,13 @@ body {
         border-color: #5a3e29;
         color: white;
         font-size: 9px;
+    }
+    .tag {
+        background-color: #bbc191;
+        border-radius: 13px;
+        padding: 1%;
+        margin: 2%;
+        text-align: center;
+        font-size: 60%;
     }
 };
